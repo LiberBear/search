@@ -13,7 +13,7 @@ $('#search-key').keyup(function(){
 
     $.getJSON('./data.json', function(data) {
       $.each(data.items, function(key, val){
-        if (type === 'Р’СЃРµ'){
+        if (type === 'Все'){
             if ((replacer(val.q.trim()).search(regex) != -1)) {
               if(count%2 === 0){
                 output += '<div class="alert alert-primary" role="alert">';
@@ -61,16 +61,17 @@ $('#search-key').keyup(function(){
         }
       });
       if(count===0){
-        output += '<h3>РќРёС‡РµРіРѕ РЅРµ РЅР°Р№РґРµРЅРѕ</h3>';
-        output += '<p>РџРѕРїСЂРѕР±СѓР№ РїСЂРѕРІРµСЂРёС‚СЊ Р·Р°РїСЏС‚С‹Рµ Рё РїСЂРѕС‡РёРµ РјРµР»РѕС‡Рё</p>'
+        output += '<h3>Ничего не найдено</h3>';
+        output += '<p>Проверь мелочи в виде запятых</p>'
       }
       if(searchField === ''){
-        output = '<h6>РџСѓСЃС‚РѕР№ Р·Р°РїСЂРѕСЃ ?!</h6>'
+        output = '<h6>Пустой запрос ?!</h6>'
       }
       $('#results').html(output);
     }); 
 });
 });
+//Функции отчистки поисковой строки
 $('#clear').click(function(){
      $('#search-key').val('');
 });
