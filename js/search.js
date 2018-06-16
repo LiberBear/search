@@ -11,7 +11,7 @@ $('#search-key').keyup(function(){
         return $strToReplace.replace(/\\r\\n\\\\r\\n\\|\\r\\n\\/g,"");
     }
 
-    $.getJSON('/data.json', function(data) {
+    $.getJSON('./data.json', function(data) {
       $.each(data.items, function(key, val){
         if (type === 'Р’СЃРµ'){
             if ((replacer(val.q.trim()).search(regex) != -1)) {
