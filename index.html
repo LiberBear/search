@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <title>Поиск ответов</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Тут ничего нет, уходи :)">
+      <meta name="author" content="LiberBear">
+      <link rel="icon" href="favicon.ico">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.1/cerulean/bootstrap.min.css" rel="stylesheet">
+      <link href="/css/starter-template.css" rel="stylesheet">
+      <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter48701207 = new Ya.Metrika({
+                    id:48701207,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48701207" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+   </head>
+   <body class="text-center">
+      <main role="main" class="container">
+        <div class="starter-template"> <div class="input-group">
+               <div class="input-group-btn search-panel">
+                  <div class="input-group-prepend">
+                     <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                     <span id="search_concept">Все</span> <span class="caret"></span>
+                     </button>
+                     <ul class="dropdown-menu" role="menu">
+                         <li><a class="dropdown-item" href="#all">Все</a></li>
+                        <li><a class="dropdown-item" href="#tbd">ТБД</a></li>
+                        <li><a class="dropdown-item" href="#pp">ПП</a></li>
+                        <li><a class="dropdown-item" href="#os">ОС</a></li>
+                        <li><a class="dropdown-item" href="#osis">ОСиС</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <input type="hidden" name="search_param" value="all" id="search_param">         
+               <input type="text" class="form-control" placeholder="Вопрос вводить сюда" id="search-key">
+               <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" id="clear">Очистить</button>
+               </div>
+	             <div class="container" id="results" class="result_block" style="margin: 10px;">
+              <h6>Вопросы обновятся чуть позже</h6>
+                <p class="mt-5 mb-3 text-muted">Для очистки поисковой строки жми Enter</p>
+            </div>
+            </div>
+            
+            <a href="#" class="scrollup">Наверх</a>
+</div>
+      </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="/js/search2.js"></script>
+      <script src="/js/switcher.js"></script>
+            <script type="text/javascript">
+        $(document).ready(function(){
+         
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+        } else {
+        $('.scrollup').fadeOut();
+        }
+        });
+         
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+        });
+         
+        });
+        </script>
+   </body>
+</html>
