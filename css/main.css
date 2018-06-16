@@ -41,7 +41,7 @@ bottom:50px;
 right:100px;
 display:none;
 text-indent:-9999px;
-background: url('icon_top.png') no-repeat;
+background: url('./icon_top.png') no-repeat;
 filter: invert(100%);
 }
 .footer {
